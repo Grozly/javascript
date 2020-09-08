@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>lesson_8</title>
+</head>
+<body>
+    <h3>Форма подсчета оборудования</h3>
+    <div class="mobile-table">
+        <table id="tableCount">
+            <thead>
+                <tr>
+                    <td>Позиция</td>
+                    <td>Наименование</td>
+                    <td>Обозначение</td>
+                    <td>Код (артикул)</td>
+                    <td>Предприятие изготовитель</td>
+                    <td>Еденица измерения</td>
+                    <td>Кол-во</td>
+                    <td class="pricePosition">Цена</td>
+                    <td>Стоимость материала</td>
+                    <td>Стоимость работ</td>
+                    <td>Общая стоимость работ</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Пульт контроля и управления охранно-пожарный С2000М</td>
+                    <td></td>
+                    <td></td>
+                    <td>НПО "БОЛИД"</td>
+                    <td>шт</td>
+                    <td id="amount"><input id="amountInput" type="number" value="0" min="0"></td>
+                    <td class="price">6804</td>
+                    <td class="sum">0</td>
+                    <td class="workPrice">876.65</td>
+                    <td class="workSum">0</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Блок индикации с клавиатурой С2000-БКИ</td>
+                    <td></td>
+                    <td></td>
+                    <td>НПО "БОЛИД"</td>
+                    <td>шт</td>
+                    <td id="amount"><input id="amountInput" type="number" value="0" min="0"></td>
+                    <td class="price">4536</td>
+                    <td class="sum">0</td>
+                    <td class="workPrice">876.65</td>
+                    <td class="workSum">0</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Прибор приемно-контрольный и управления охранно-пожарный Сигнал-20М</td>
+                    <td></td>
+                    <td></td>
+                    <td>НПО "БОЛИД"</td>
+                    <td>шт</td>
+                    <td id="amount"><input id="amountInput" type="number" value="0" min="0"></td>
+                    <td class="price">4320</td>
+                    <td class="sum">0</td>
+                    <td class="workPrice">1208.06</td>
+                    <td class="workSum">0</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <p>Оборудование <span id="total">0</span></p>
+    <p>Работа <span id="totalWork">0</span></p>
+    <p>Итого <span id="totalSumAll">0</span></p>
+    <script src="app.js"></script>
+</body>
+</html>
